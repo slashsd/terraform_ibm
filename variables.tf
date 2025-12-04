@@ -79,3 +79,9 @@ variable "aap_host" {
   type        = string
   default     = "https://caap.fvz.ansible-labs.de:443"
 }
+
+variable "aap_token" {
+  description = "Token for authenticating with the AAP provider"
+  type        = string
+  sensitive   = true
+}
