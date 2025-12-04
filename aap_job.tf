@@ -8,3 +8,13 @@ resource "aap_inventory" "Slash_inventory" {
     }
   )
 }
+
+resource "aap_group" "Slash_group" {
+  inventory_id = aap_inventory.Slash_inventory.id
+  name         = "tf_group"
+  variables = jsonencode(
+    {
+      "foo" : "bar"
+    }
+  )
+}
