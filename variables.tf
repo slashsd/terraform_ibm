@@ -84,4 +84,5 @@ variable "aap_token" {
   description = "Token for authenticating with the AAP provider"
   type        = string
   sensitive   = true
+  default     = "2667d6111a436335ba63a7a7b855c71f9f1b2147"
 }
