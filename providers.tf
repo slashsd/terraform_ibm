@@ -25,5 +25,5 @@ provider "aws" {
 # Configure AAP Provider
 provider "aap" {
   host  = "https://caap.fvz.ansible-labs.de" # Also supports AAP_HOSTNAME environment variable
-  token = var.aap_token # Use a variable or environment variable
+  #token = var.aap_token # Use a variable or environment variable
 }
